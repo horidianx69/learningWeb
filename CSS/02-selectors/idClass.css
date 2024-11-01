@@ -1,0 +1,17 @@
+#section-1{
+    color: red;
+}
+#section-2{
+    color: blue;
+}
+
+.child{
+    color: green;
+    border: 2px solid black;
+}
+#section-1 .child {
+    border: 2px solid yellowgreen;
+}
+.wrapper{
+    background: lightgoldenrodyellow;
+}

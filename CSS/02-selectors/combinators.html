@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent > h2{
+            color: red;
+        }
+        /* ek hi imidiate sibling or beech mein kuch agaya toh chu jata hai */
+        #parent + h2{
+            color: palevioletred;
+        }
+        /* saare siblings regardless */
+        #parent ~ h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <h2>This is a heading</h2>
+        <div class="child">
+            <h2>This is a sub-heading</h2>
+        </div>
+        <h2>This is a heading</h2>
+    </div>
+
+    <h2>This is a heading</h2>
+
+
+    <h2>This is a heading outside </h2>
+</body>
+</html>
